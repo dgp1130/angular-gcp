@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  // Backend runs on port 8000 by default locally.
+  backendUrl: 'http://localhost:8000',
 };
 
 /*
