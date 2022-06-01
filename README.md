@@ -11,6 +11,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 * Run `npm run deploy`.
 
+Production instance runs at https://frontend-glud4nxwta-uw.a.run.app/ (if I'm
+still paying to keep it up).
+
 ## Development server
 
 Use `npm run frontend:dev` to start a live-reloading dev server of the Angular
