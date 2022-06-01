@@ -4,8 +4,10 @@
   "scripts": {
     "start": "npm run -s",
     "backend": "npm start -w projects/backend",
+    "backend:dev": "npm run -w projects/backend dev",
     "backend:deploy": "gcloud run deploy backend --source .",
     "frontend": "npm start -w projects/frontend",
+    "frontend:dev": "npm run -w projects/frontend dev:ssr",
     "frontend:deploy": "gcloud run deploy frontend --source ."
   },
   "private": true,
@@ -19,6 +21,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "nodemon": "^2.0.16",
     "typescript": "~4.6.2"
   },
   "workspaces": [

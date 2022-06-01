@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "start": "npm run -s build && node ../../dist/backend/server.js",
-    "build": "tsc -p tsconfig.server.json"
+    "build": "tsc -p tsconfig.server.json",
+    "dev": "tsc -p tsconfig.server.json --watch & nodemon --watch ../../dist/backend/ ../../dist/backend/server.js"
   },
   "private": true,
   "dependencies": {
