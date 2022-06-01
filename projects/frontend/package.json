@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run frontend:serve-ssr",
-    "serve:ssr": "node ../../dist/frontend/server/main.js",
+    "dev:ssr": "(cd ../../ && ng run frontend:serve-ssr)",
+    "serve:ssr": "(cd ../../ && node dist/frontend/server/main.js)",
     "build:ssr": "ng build && ng run frontend:server",
     "prerender": "ng run frontend:prerender",
     "deploy": "gcloud run deploy frontend --source ."
