@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../environments/environment';
+import { HelloRequest, HelloResponse } from 'ng-gcp-backend/src/api';
 
 @Injectable({
   providedIn: 'root'
@@ -17,12 +18,4 @@ export class BackendService {
     const json = await res.json() as HelloResponse;
     return json.message;
   }
-}
-
-interface HelloRequest {
-  name: string;
-}
-
-interface HelloResponse {
-  message: string;
 }

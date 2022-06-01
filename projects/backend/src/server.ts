@@ -1,5 +1,6 @@
 import * as cors from 'cors';
 import * as express from 'express';
+import { HelloRequest, HelloResponse } from './api';
 
 const app = express();
 
@@ -14,14 +15,6 @@ app.use(cors({
 app.use(express.json());
 
 app.post('/hello', (req, res) => {
-    interface HelloRequest {
-        name: string;
-    }
-    
-    interface HelloResponse {
-        message: string;
-    }
-
     const request = req.body as HelloRequest;
     const response = { message: `Hello, ${request.name}!` } as HelloResponse;
     res.json(response);
