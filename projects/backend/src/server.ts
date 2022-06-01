@@ -1,6 +1,15 @@
+import * as cors from 'cors';
 import * as express from 'express';
 
 const app = express();
+
+app.use(cors({
+    // Frontend origins are allowed.
+    origin: [
+        'http://localhost:4200',
+        'https://frontend-glud4nxwta-uw.a.run.app',
+    ]
+}));
 
 app.use(express.json());
 
